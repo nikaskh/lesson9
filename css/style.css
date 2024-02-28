@@ -1,0 +1,70 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+}
+.box {
+    border: 5px solid blue;
+    /* width: 100px; */
+    /* height: 200px; */
+    background-color: white;
+    color: blue;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+    "lorem culpa officia officia "
+    "lorem mollit  mollit fugiat"
+    "exercitation magna laboris fugiat"
+    "ullamco ullamco laboris consetectur"
+    "pariatur dolore dolore excepteur";
+}
+.box:nth-child(1){
+    grid-area: lorem;
+}
+.box:nth-child(2){
+    grid-area: culpa;
+}
+.box:nth-child(3){
+    grid-area: officia;
+}
+.box:nth-child(4){
+    grid-area: mollit;
+}
+.box:nth-child(5){
+    grid-area: fugiat;
+}
+.box:nth-child(6){
+    grid-area: exercitation;
+}
+.box:nth-child(7){
+    grid-area: magna;
+}
+.box:nth-child(8){
+    grid-area: laboris;
+}
+.box:nth-child(9){
+    grid-area: ullamco;
+}
+.box:nth-child(10){
+    grid-area: consetectur;
+}
+.box:nth-child(11){
+    grid-area: pariatur;
+}
+.box:nth-child(12){
+    grid-area: dolore;
+}
+.box:nth-child(13){
+    grid-area: excepteur;
+}
